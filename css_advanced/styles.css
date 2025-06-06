@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header and Navigation */
+
+header{
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+main section:first-of-type{
+    background: #f4f7fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+main section:first-of-type h1{
+    font-size: 3rem;
+    color: #222;
+}
+main section:first-of-type span{
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2rem;
+    color: #777
+}
+main section:first-of-type button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+main section:first-of-type button:hover{
+    background-color: #ff5722;
+}
+
+/* Learn from the pros */
+main section:nth-of-type(1)>div:nth-of-type(2){
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+main section:nth-of-type(1) > div:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+main section:nth-of-type(1) > div:nth-of-type(2) > div > div {
+  width: 200px;
+}
+
+main section:nth-of-type(1) img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Testimonial Section */
+main section:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 20px;
+  background: #eef2f7;
+}
+
+main section:nth-of-type(2) > div {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Tutorials Grid */
+main section:nth-of-type(3) {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+main section:nth-of-type(3) h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main section:nth-of-type(3) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+main section:nth-of-type(3) > div > div {
+  background: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+main section:nth-of-type(3) img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Ratings */
+.fa-star {
+  color: #ffd700;
+}
+
+/* Membership Section */
+main section:nth-of-type(4) {
+  padding: 60px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+main section:nth-of-type(4) > div {
+  display: inline-block;
+  margin: 20px;
+  max-width: 250px;
+}
+
+main section:nth-of-type(4) button {
+  margin-top: 40px;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* FAQ Section */
+main section:nth-of-type(5) {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+main section:nth-of-type(5) h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main section:nth-of-type(5) > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+main section:nth-of-type(5) > div > div {
+  flex: 1 1 300px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer img {
+  height: 50px;
+}
+
+footer i {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
