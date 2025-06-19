@@ -134,7 +134,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 30rem;
+  padding: 0 25rem;
   text-align: center;
 }
 
@@ -161,7 +161,6 @@ header {
   align-items: center;
   box-sizing: border-box;
   padding: 150px 0;
-  /* margin-top: 40vh; */
 }
 
 
@@ -172,7 +171,7 @@ header {
   align-items: center;
   margin: 10px;
   padding: 5px;
-  width: 15%;
+  width: 20%;
 }
 
 .service-card img {
@@ -196,6 +195,60 @@ header {
   line-height: 1.6;
   text-align: center;
 }
+
+#our-results{
+  height: 100vh;
+  background-image: url('/assets/headphones_hero_2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+}
+
+.results-text{
+  box-sizing: border-box;
+  line-height: 1.6;
+  width: 60%;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  margin: auto;
+}
+
+.results-text h3{
+  font-size: 3rem;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+.results-graphics{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-metric{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.result-metric img{
+  height: 200px;
+}
+
+.metric-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 @media (max-width: 480px) {
   .navbar {
