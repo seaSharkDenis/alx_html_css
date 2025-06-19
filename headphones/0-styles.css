@@ -23,6 +23,7 @@ body {
   background-position: center;
   text-align: center;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -61,29 +62,29 @@ header {
   align-items: center;
 }
 
-.hero{
-    color: white;
-    position: relative;
-    z-index: 1;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
+.hero {
+  color: white;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.hero h1{
-    font-size: 2rem;
-    margin-bottom: 10px;
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-.hero h2{
-    font-weight: normal;
-    margin-bottom: 30px;
+.hero h2 {
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
-.hero .cta-button{
+.hero .cta-button {
   background-color: #ff6565;
   color: #fff;
   padding: 15px 30px;
@@ -96,27 +97,140 @@ header {
 }
 
 .hero .cta-button:hover,
-.hero .cta-button:active{
+.hero .cta-button:active {
   opacity: 0.9;
 }
 
-.hero p{
-    max-width: 600px;
-    margin-top:40px;
-    line-height: 1.5;
+.hero p {
+  max-width: 600px;
+  margin-top: 40px;
+  line-height: 1.5;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* What we do */
+#what-we-do {
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.information {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30rem;
+  text-align: center;
+}
+
+.information-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.information h2 {
+  margin-bottom: 40px;
+}
+
+.information-text {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.services-what {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 150px 0;
+  /* margin-top: 40vh; */
+}
+
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  width: 15%;
+}
+
+.service-card img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.service-card p,
+.service-card img {
+  padding: 5px;
+}
+
+.service-card h3 {
+  text-align: justify;
+  line-height: 1.6;
+}
+.service-card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+  text-align: center;
 }
 
 @media (max-width: 480px) {
   .navbar {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
     gap: 15px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+
+  .logo {
+    margin: 0;
+    order: 1;
+  }
+
+  .nav-links {
+    order: 2;
+    display: none;
+    width: 100%;
   }
 
   .nav-links ul {
     flex-direction: column;
+    gap: 20px;
     align-items: center;
-    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
   }
 
   .hero h1 {
@@ -131,5 +245,10 @@ header {
     padding: 12px 24px;
     font-size: 0.9rem;
   }
-}
 
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
