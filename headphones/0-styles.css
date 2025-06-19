@@ -84,7 +84,7 @@ header {
   margin-bottom: 30px;
 }
 
-.hero .cta-button {
+.hero .cta-button, button {
   background-color: #ff6565;
   color: #fff;
   padding: 15px 30px;
@@ -138,7 +138,7 @@ header {
   text-align: center;
 }
 
-.information-section{
+.information-section {
   display: flex;
   flex-direction: column;
   align-items: flex;
@@ -162,7 +162,6 @@ header {
   box-sizing: border-box;
   padding: 150px 0;
 }
-
 
 .service-card {
   display: flex;
@@ -196,9 +195,9 @@ header {
   text-align: center;
 }
 
-#our-results{
+#our-results {
   height: 100vh;
-  background-image: url('/assets/headphones_hero_2.jpg');
+  background-image: url("/assets/headphones_hero_2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,7 +205,7 @@ header {
   padding: 20px;
 }
 
-.results-text{
+.results-text {
   box-sizing: border-box;
   line-height: 1.6;
   width: 60%;
@@ -216,13 +215,13 @@ header {
   margin: auto;
 }
 
-.results-text h3{
+.results-text h3 {
   font-size: 3rem;
   margin-top: 150px;
   margin-bottom: 40px;
 }
 
-.results-graphics{
+.results-graphics {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -232,13 +231,13 @@ header {
   align-items: center;
 }
 
-.result-metric{
+.result-metric {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.result-metric img{
+.result-metric img {
   height: 200px;
 }
 
@@ -249,6 +248,49 @@ header {
   transform: translate(-50%, -50%);
 }
 
+#contact-us {
+  height: 100vh;
+  padding: 20px;
+}
+
+#contact-us h2 {
+  font-size: 3rem;
+  margin: 50px 60px;
+  
+}
+
+.contact-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 60%;
+  width: 60%;
+  margin: auto;
+}
+
+.contact-form label{
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-form input {
+  padding: 15px;
+  width: 70%;
+  border-style: none none solid none;
+  margin: 45px;
+}
+
+input::placeholder{
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#submit-btn{
+  margin-top: 40px;
+}
 
 @media (max-width: 480px) {
   .navbar {
