@@ -1,0 +1,29 @@
+footer{
+  background-color: #071629;
+  height: 30vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-section-one{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.socials{
+  display: flex;
+  gap: 10px;
+}
+
+.copyright-section{
+  text-align: center;
+  color: #9c9c9c;
+}
+.footer-section-one img{
+  height: 40px;
+}
